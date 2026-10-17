@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/**
+ * "Yet Another Multicolumn Layout" - (X)HTML/CSS framework
+ * (en) stylesheet for screen layout
+ * (de) Stylesheet für das Bildschirm-Layout
+ *
+ * @creator     YAML Builder V1.0.3b (http://builder.yaml.de)
+ * @file        basemod.css
+ */
+
+@media screen, projection
+{
+  /*-------------------------------------------------------------------------*/
+
+  /* (en) Marginal areas & page background */
+  /* (de) Randbereiche & Seitenhintergrund */
+  body { background: #FAE5CA none; padding: 10px 0; }  /* nxx bkg: #96B7D7 */
+
+  /* Layout Alignment | Layout-Ausrichtung */
+  #page_margins { margin: 0 auto; }
+
+  /* Layout Properties | Layout-Eigenschaften */
+  #page_margins { width: auto;  min-width: 955px; max-width: 955px; background: #fff; }
+  #header { padding: 0px 0px 0px 0px; color: #000; height: 123px; background: #fff; }
+  #nav { overflow:hidden; }
+  #nav_main {  }
+  #main { margin: 10px 0; background: #fff; }
+  
+  #footer
+  {
+  	padding: 10px 24px 10px 20px;
+  	color:#666;
+  	background: #fff;
+  	border-top: 1px dotted #445656;
+  }
+
+  /* (en) navigation: horizontal adjustment | (de) horizontale Ausrichtung  */
+  #nav ul { margin-left: 20px; }
+
+  /*-------------------------------------------------------------------------*/
+
+  /**
+   * (en) Formatting content container
+   * (de) Formatierung der Inhalts-Container
+   */
+
+  #col1 { float: right; width: 20%}
+  #col2 { display:none}
+  #col3 { width: auto; margin: 0 21% 0 0}
+  #col1_content { padding: 10px 20px 0 10px }
+  #col3_content { padding: 10px 10px 0 20px }
+
+
+  /* set column dividers */ 
+  #col3 { border-right: 1px #445656 dotted }
+}
